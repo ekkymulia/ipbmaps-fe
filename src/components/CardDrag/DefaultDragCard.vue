@@ -1,4 +1,5 @@
 <template>
+  <SearchButton/>
   <div id="cardDrag" @mousedown="dragCardFunction" class="cardIsDown">
     <div class="bgwhite">
       <div id="mydivheader" class="bgwhite" style="cursor: pointer">
@@ -79,6 +80,7 @@
 </template>
 <script setup>
 import DefaultSliderCard from '../CardSlider/DefaultSliderCard.vue'
+import SearchButton from '../Button/SearchButton.vue'
 </script>
 <script>
 // Import Swiper Vue.js components
@@ -137,6 +139,7 @@ export default {
   background-color: white;
   position: absolute;
   bottom: 0;
+  border-radius: 8px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   animation: 1s ease-out 0s 1

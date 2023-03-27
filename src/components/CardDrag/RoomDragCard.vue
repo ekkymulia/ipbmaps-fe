@@ -1,4 +1,5 @@
 <template>
+  <BackButton/>
   <div id="cardDrag" @mousedown="dragCardFunction" class="cardIsDown">
     <div class="bgwhite">
       <div id="mydivheader" style="cursor: pointer">
@@ -19,6 +20,9 @@
       <div class="card-head bgwhite">
         <h1>CB-KOM 5</h1>
         <span>Fakultas Sekolah Vokasi - Gedung CB Lantai 2</span>
+        <div class="direction">
+          <DirectionButton />
+        </div>
       </div>
       <div class="card-body bgwhite">
         <h2>Foto Ruangan</h2>
@@ -57,6 +61,8 @@
 </template>
 <script setup>
 import PhotoSliderCard from '../CardSlider/PhotoSliderCard.vue'
+import DirectionButton from '../Button/DirectionButton.vue'
+import BackButton from '../Button/BackButton.vue'
 </script>
 <script>
 // Import Swiper Vue.js components
@@ -115,8 +121,8 @@ export default {
   background-color: white;
   position: absolute;
   bottom: 0;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   animation: 4s ease-in-out 0s 1 animationShow;
 }
 
